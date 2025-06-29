@@ -3,8 +3,41 @@ const { google } = require('googleapis');
 const { JWT } = require('google-auth-library');
 const fs = require('fs');
 const xlsx = require('xlsx');
-const keys = JSON.parse(process.env.GOOGLE_CREDENTIALS);
 
+// Better credential parsing with error handling
+function parseCredentials() {
+  try {
+    if (!process.env.GOOGLE_CREDENTIALS) {
+      throw new Error('GOOGLE_CREDENTIALS environment variable is not set');
+    }
+    
+    const keys = JSON.parse(process.env.GOOGLE_CREDENTIALS);
+    
+    // Fix private key formatting (common issue with environment variables)
+    if (keys.private_key) {
+      keys.private_key = keys.private_key.replace(/\\n/g, '\n');
+    }
+    
+    // Validate required fields
+    const requiredFields = ['client_email', 'private_key', 'project_id'];
+    for (const field of requiredFields) {
+      if (!keys[field]) {
+        throw new Error(`Missing required field: ${field}`);
+      }
+    }
+    
+    console.log('✅ Credentials parsed successfully');
+    console.log('📧 Client email:', keys.client_email);
+    console.log('🔑 Private key format:', keys.private_key.startsWith('-----BEGIN PRIVATE KEY-----') ? 'Valid' : 'Invalid');
+    
+    return keys;
+  } catch (error) {
+    console.error('❌ Error parsing GOOGLE_CREDENTIALS:', error.message);
+    throw error;
+  }
+}
+
+const keys = parseCredentials();
 
 const auth = new JWT({
   email: keys.client_email,
@@ -212,6 +245,12 @@ async function getSlotAvailability(date) {
 // Initialize Google Sheets (create header if not exists)
 async function initializeSheet() {
   try {
+    console.log('🔧 Initializing Google Sheets connection...');
+    
+    // Test authentication first
+    await auth.authorize();
+    console.log('✅ Authentication successful');
+    
     // Check if the sheet has headers
     const res = await sheets.spreadsheets.values.get({
       spreadsheetId: SPREADSHEET_ID,
@@ -228,17 +267,22 @@ async function initializeSheet() {
           values: [['User ID', 'Name', 'Age', 'Gender', 'Date', 'Time', 'Test']]
         }
       });
-      console.log('Sheet headers initialized');
+      console.log('✅ Sheet headers initialized');
     } else {
-      console.log('Sheet headers already exist');
+      console.log('✅ Sheet headers already exist');
     }
+    
+    console.log('🎉 Google Sheets initialized successfully');
   } catch (error) {
-    console.error('Error initializing sheet:', error);
+    console.error('❌ Error initializing sheet:', error);
+    throw error;
   }
 }
 
 // Call initialization when module is loaded
-initializeSheet();
+initializeSheet().catch(error => {
+  console.error('Failed to initialize sheets:', error);
+});
 
 module.exports = {
   appendBooking,
