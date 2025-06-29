@@ -1,0 +1,14 @@
+2025/06/29-16:20:20.696 2714 Reusing MANIFEST C:\Users\Gajjar\Downloads\venom-bot-blood-test\bot\tokens\blood-bot-session\Default\Local Storage\leveldb/MANIFEST-000001
+2025/06/29-16:20:20.703 2714 Recovering log #9
+2025/06/29-16:20:20.710 2714 Reusing old log C:\Users\Gajjar\Downloads\venom-bot-blood-test\bot\tokens\blood-bot-session\Default\Local Storage\leveldb/000009.log 
+2025/06/29-16:22:21.402 23a0 Level-0 table #13: started
+2025/06/29-16:22:21.408 23a0 Level-0 table #13: 15098 bytes OK
+2025/06/29-16:22:21.410 23a0 Delete type=0 #9
+2025/06/29-16:22:21.412 23a0 Compacting 4@0 + 0@1 files
+2025/06/29-16:22:21.418 23a0 Generated table #14@0: 95 keys, 8408 bytes
+2025/06/29-16:22:21.418 23a0 Compacted 4@0 + 0@1 files => 8408 bytes
+2025/06/29-16:22:21.420 23a0 compacted to: files[ 0 1 0 0 0 0 0 ]
+2025/06/29-16:22:21.421 23a0 Delete type=2 #3
+2025/06/29-16:22:21.421 23a0 Delete type=2 #7
+2025/06/29-16:22:21.421 23a0 Delete type=2 #10
+2025/06/29-16:22:21.422 23a0 Delete type=2 #13

@@ -1,0 +1,38 @@
+2025/06/29-16:20:21.304 170 Reusing MANIFEST C:\Users\Gajjar\Downloads\venom-bot-blood-test\bot\tokens\blood-bot-session\Default\IndexedDB\https_web.whatsapp.com_0.indexeddb.leveldb/MANIFEST-000001
+2025/06/29-16:20:21.305 170 Recovering log #833
+2025/06/29-16:20:21.333 170 Reusing old log C:\Users\Gajjar\Downloads\venom-bot-blood-test\bot\tokens\blood-bot-session\Default\IndexedDB\https_web.whatsapp.com_0.indexeddb.leveldb/000833.log 
+2025/06/29-16:20:23.014 170 Level-0 table #842: started
+2025/06/29-16:20:23.044 170 Level-0 table #842: 419482 bytes OK
+2025/06/29-16:20:23.046 170 Delete type=0 #833
+2025/06/29-16:20:23.048 170 Manual compaction at level-0 from '\x00x\x00\x00\x00' @ 72057594037927935 : 1 .. '\x00y\x00\x00\x00' @ 0 : 0; will stop at (end)
+2025/06/29-16:20:25.932 2da0 Compacting 1@1 + 5@2 files
+2025/06/29-16:20:26.087 2da0 Generated table #843@1: 55419 keys, 2228793 bytes
+2025/06/29-16:20:26.165 2da0 Generated table #844@1: 17054 keys, 2170280 bytes
+2025/06/29-16:20:26.251 2da0 Generated table #845@1: 14785 keys, 2198955 bytes
+2025/06/29-16:20:26.337 2da0 Generated table #846@1: 42607 keys, 2183477 bytes
+2025/06/29-16:20:26.448 2da0 Generated table #847@1: 88761 keys, 1881161 bytes
+2025/06/29-16:20:26.448 2da0 Compacted 1@1 + 5@2 files => 10662666 bytes
+2025/06/29-16:20:26.449 2da0 compacted to: files[ 0 0 5 0 0 0 0 ]
+2025/06/29-16:20:26.449 2da0 Delete type=2 #835
+2025/06/29-16:20:26.449 2da0 Delete type=2 #836
+2025/06/29-16:20:26.450 2da0 Delete type=2 #837
+2025/06/29-16:20:26.450 2da0 Delete type=2 #838
+2025/06/29-16:20:26.450 2da0 Delete type=2 #839
+2025/06/29-16:20:26.450 2da0 Delete type=2 #842
+2025/06/29-16:27:42.602 370c Level-0 table #849: started
+2025/06/29-16:27:42.658 370c Level-0 table #849: 1188198 bytes OK
+2025/06/29-16:27:42.660 370c Delete type=0 #841
+2025/06/29-16:27:51.762 170 Compacting 1@1 + 5@2 files
+2025/06/29-16:27:51.882 170 Generated table #850@1: 58764 keys, 2232498 bytes
+2025/06/29-16:27:51.967 170 Generated table #851@1: 18091 keys, 2180440 bytes
+2025/06/29-16:27:52.047 170 Generated table #852@1: 12681 keys, 2196681 bytes
+2025/06/29-16:27:52.139 170 Generated table #853@1: 38527 keys, 2180053 bytes
+2025/06/29-16:27:52.266 170 Generated table #854@1: 95858 keys, 2033782 bytes
+2025/06/29-16:27:52.266 170 Compacted 1@1 + 5@2 files => 10823454 bytes
+2025/06/29-16:27:52.267 170 compacted to: files[ 0 0 5 0 0 0 0 ]
+2025/06/29-16:27:52.268 170 Delete type=2 #843
+2025/06/29-16:27:52.268 170 Delete type=2 #844
+2025/06/29-16:27:52.268 170 Delete type=2 #845
+2025/06/29-16:27:52.268 170 Delete type=2 #846
+2025/06/29-16:27:52.268 170 Delete type=2 #847
+2025/06/29-16:27:52.269 170 Delete type=2 #849

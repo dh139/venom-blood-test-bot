@@ -1,0 +1,53 @@
+2025/06/29-16:29:36.164 375c Reusing MANIFEST C:\Users\Gajjar\Downloads\venom-bot-blood-test\bot\tokens\blood-bot-session\Default\IndexedDB\https_web.whatsapp.com_0.indexeddb.leveldb/MANIFEST-000001
+2025/06/29-16:29:36.169 375c Recovering log #848
+2025/06/29-16:29:36.199 375c Reusing old log C:\Users\Gajjar\Downloads\venom-bot-blood-test\bot\tokens\blood-bot-session\Default\IndexedDB\https_web.whatsapp.com_0.indexeddb.leveldb/000848.log 
+2025/06/29-16:29:37.725 1d14 Manual compaction at level-0 from '\x00y\x00\x00\x00' @ 72057594037927935 : 1 .. '\x00z\x00\x00\x00' @ 0 : 0; will stop at (end)
+2025/06/29-16:42:02.686 375c Level-0 table #857: started
+2025/06/29-16:42:02.740 375c Level-0 table #857: 1037266 bytes OK
+2025/06/29-16:42:02.742 375c Delete type=0 #848
+2025/06/29-16:42:03.245 375c Compacting 1@1 + 5@2 files
+2025/06/29-16:42:03.384 375c Generated table #858@1: 61739 keys, 2236645 bytes
+2025/06/29-16:42:03.446 375c Generated table #859@1: 18690 keys, 2172510 bytes
+2025/06/29-16:42:03.519 375c Generated table #860@1: 11222 keys, 2193507 bytes
+2025/06/29-16:42:03.602 375c Generated table #861@1: 32943 keys, 2176387 bytes
+2025/06/29-16:42:03.749 375c Generated table #862@1: 105505 keys, 2240984 bytes
+2025/06/29-16:42:03.749 375c Compacted 1@1 + 5@2 files => 11020033 bytes
+2025/06/29-16:42:03.751 375c compacted to: files[ 0 0 5 0 0 0 0 ]
+2025/06/29-16:42:03.752 375c Delete type=2 #850
+2025/06/29-16:42:03.752 375c Delete type=2 #851
+2025/06/29-16:42:03.752 375c Delete type=2 #852
+2025/06/29-16:42:03.752 375c Delete type=2 #853
+2025/06/29-16:42:03.752 375c Delete type=2 #854
+2025/06/29-16:42:03.752 375c Delete type=2 #857
+2025/06/29-16:42:31.915 375c Level-0 table #864: started
+2025/06/29-16:42:31.978 375c Level-0 table #864: 1182221 bytes OK
+2025/06/29-16:42:31.979 375c Delete type=0 #856
+2025/06/29-16:42:31.985 375c Compacting 1@1 + 4@2 files
+2025/06/29-16:42:32.117 375c Generated table #865@1: 65738 keys, 2228436 bytes
+2025/06/29-16:42:32.220 375c Generated table #866@1: 22554 keys, 2188391 bytes
+2025/06/29-16:42:32.290 375c Generated table #867@1: 7720 keys, 2175434 bytes
+2025/06/29-16:42:32.371 375c Generated table #868@1: 20446 keys, 2177365 bytes
+2025/06/29-16:42:32.392 375c Generated table #869@1: 16248 keys, 344140 bytes
+2025/06/29-16:42:32.392 375c Compacted 1@1 + 4@2 files => 9113766 bytes
+2025/06/29-16:42:32.393 375c compacted to: files[ 0 0 6 0 0 0 0 ]
+2025/06/29-16:42:32.393 375c Delete type=2 #858
+2025/06/29-16:42:32.393 375c Delete type=2 #859
+2025/06/29-16:42:32.393 375c Delete type=2 #860
+2025/06/29-16:42:32.393 375c Delete type=2 #861
+2025/06/29-16:42:32.394 375c Delete type=2 #864
+2025/06/29-16:42:37.296 375c Level-0 table #871: started
+2025/06/29-16:42:37.345 375c Level-0 table #871: 1012824 bytes OK
+2025/06/29-16:42:37.347 375c Delete type=0 #863
+2025/06/29-16:42:37.364 375c Compacting 1@1 + 4@2 files
+2025/06/29-16:42:37.492 375c Generated table #872@1: 66265 keys, 2227002 bytes
+2025/06/29-16:42:37.608 375c Generated table #873@1: 24212 keys, 2194579 bytes
+2025/06/29-16:42:37.698 375c Generated table #874@1: 4785 keys, 2159261 bytes
+2025/06/29-16:42:37.811 375c Generated table #875@1: 20346 keys, 2196433 bytes
+2025/06/29-16:42:37.823 375c Generated table #876@1: 3861 keys, 308733 bytes
+2025/06/29-16:42:37.824 375c Compacted 1@1 + 4@2 files => 9086008 bytes
+2025/06/29-16:42:37.825 375c compacted to: files[ 0 0 7 0 0 0 0 ]
+2025/06/29-16:42:37.825 375c Delete type=2 #865
+2025/06/29-16:42:37.825 375c Delete type=2 #866
+2025/06/29-16:42:37.825 375c Delete type=2 #867
+2025/06/29-16:42:37.826 375c Delete type=2 #868
+2025/06/29-16:42:37.826 375c Delete type=2 #871
