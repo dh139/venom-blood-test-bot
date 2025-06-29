@@ -3,7 +3,8 @@ const { google } = require('googleapis');
 const { JWT } = require('google-auth-library');
 const fs = require('fs');
 const xlsx = require('xlsx');
-const keys = require('./credentials.json');
+const keys = JSON.parse(process.env.GOOGLE_CREDENTIALS);
+
 
 const auth = new JWT({
   email: keys.client_email,
