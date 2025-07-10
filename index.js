@@ -4,7 +4,8 @@ const QRCode = require("qrcode")
 const fs = require("fs")
 const path = require("path")
 const express = require("express")
-const http = require("http")
+const https = require('https'); // Replace http with https at the top
+
 
 const {
   appendBooking,
@@ -79,22 +80,22 @@ const server = app.listen(PORT, () => {
 
 // Keep-alive mechanism
 function keepAlive() {
-  const url = `${RENDER_URL}/ping`
+  const url = `${RENDER_URL}/ping`; // e.g., https://your-app.onrender.com/ping
 
-  // Use http.get for internal ping
-  const request = http.get(url, (res) => {
-    console.log(`✅ Keep-alive ping successful - Status: ${res.statusCode} - ${new Date().toISOString()}`)
-  })
+  const request = https.get(url, (res) => {
+    console.log(`✅ Keep-alive ping successful - Status: ${res.statusCode} - ${new Date().toISOString()}`);
+  });
 
   request.on("error", (error) => {
-    console.error(`❌ Keep-alive ping failed: ${error.message} - ${new Date().toISOString()}`)
-  })
+    console.error(`❌ Keep-alive ping failed: ${error.message} - ${new Date().toISOString()}`);
+  });
 
   request.setTimeout(10000, () => {
-    console.error(`⏰ Keep-alive ping timeout - ${new Date().toISOString()}`)
-    request.destroy()
-  })
+    console.error(`⏰ Keep-alive ping timeout - ${new Date().toISOString()}`);
+    request.destroy();
+  });
 }
+
 
 // Start keep-alive mechanism
 console.log(`🔄 Starting keep-alive mechanism - pinging every ${KEEP_ALIVE_INTERVAL / 1000 / 60} minutes`)
