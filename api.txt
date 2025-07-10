@@ -1,1 +1,32 @@
 AIzaSyAPIUrYoKbzjhWenwEgUXiqbMyBt0ODHkc
+require('dotenv').config();
+function parseCredentials() {
+  try {
+    const base64 = process.env.GOOGLE_CREDENTIALS;
+    if (!base64) {
+      throw new Error("GOOGLE_CREDENTIALS_BASE64 environment variable is not set");
+    }
+
+    const jsonString = Buffer.from(base64, 'base64').toString('utf8');
+    const keys = JSON.parse(jsonString);
+
+    // Handle multiline private key
+    if (keys.private_key) {
+      keys.private_key = keys.private_key.replace(/\\n/g, "\n");
+    }
+
+    const requiredFields = ["client_email", "private_key", "project_id"];
+    for (const field of requiredFields) {
+      if (!keys[field]) {
+        throw new Error(`Missing required field: ${field}`);
+      }
+    }
+
+    console.log("✅ Credentials parsed successfully");
+    return keys;
+
+  } catch (error) {
+    console.error("❌ Error parsing GOOGLE_CREDENTIALS_BASE64:", error.message);
+    throw error;
+  }
+}
